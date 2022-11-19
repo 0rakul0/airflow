@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75d3db7d-1c3d-4049-af93-972bb8159f93" name="Changes" comment="" />
+    <list default="true" id="e96bf9c2-c664-418c-8d93-c0770d449e9b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,36 +13,33 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HlVhuPyvr4AcgQ7gxZzct6AbAx" />
+  <component name="ProjectId" id="2HltQ7muhN7jnmZL9GODNTnpDdQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\airflow" />
-    </key>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="75d3db7d-1c3d-4049-af93-972bb8159f93" name="Changes" comment="" />
-      <created>1668859779623</created>
+      <changelist id="e96bf9c2-c664-418c-8d93-c0770d449e9b" name="Changes" comment="" />
+      <created>1668871478867</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668859779623</updated>
-      <workItem from="1668859785230" duration="75000" />
-      <workItem from="1668859869599" duration="164000" />
-      <workItem from="1668862429523" duration="1694000" />
+      <updated>1668871478867</updated>
+      <workItem from="1668871484465" duration="7169000" />
     </task>
     <servers />
   </component>
