@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS fundos_invetimento(
+CREATE TABLE IF NOT EXISTS fundos_invetimentos(
     id_cota SERIAL PRIMARY KEY,
     data_extracao DATE,
     codigo_fundo VARCHAR NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS fundos_invetimento(
     vpa FLOAT,
     p_vpa FLOAT,
     dy_patrimonial FLOAT,
-    dy_variacao FLOAT,
+    variacao_patrimonial FLOAT,
     rentabilidade_patrimonial_periodo FLOAT,
     rentabilidade_patrimonial_acumulada FLOAT,
     vacancia_fisica FLOAT,
@@ -29,8 +29,8 @@ CREATE TABLE IF NOT EXISTS fundos_invetimento(
     quantidade_ativos INTEGER
 );
 
-COPY fundos_invetimento(codigo_fundo, setor, preco_atual, liquidez_diaria, dividendo, dy, dy_3_acumulado, dy_6_acumulado,
+COPY fundos_invetimentos(codigo_fundo, setor, preco_atual, liquidez_diaria, dividendo, dy, dy_3_acumulado, dy_6_acumulado,
                         dy_12_acumulado,dy_3_media,dy_6_media,dy_12_media,dy_ano,variacao_preco,rentabilidade_periodo,
-                        rentabilidade_acumulada,patrimonio_liquido,vpa,p_vpa,dy_patrimonial,dy_variacao,
+                        rentabilidade_acumulada,patrimonio_liquido,vpa,p_vpa,dy_patrimonial,variacao_patrimonial,
                         rentabilidade_patrimonial_periodo,rentabilidade_patrimonial_acumulada,vacancia_fisica,
-                        vacancia_financeira,quantidade_ativos) FROM './csv/fundos_investimeno.csv' DELIMITER ';' CSV HEADER
+                        vacancia_financeira,quantidade_ativos) FROM '../csv/fundos_investimentos.csv' DELIMITER ';' CSV HEADER
