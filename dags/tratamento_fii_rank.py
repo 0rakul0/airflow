@@ -14,8 +14,8 @@ with DAG('tratamento_fii_rank', start_date = datetime(2022,11,20),
         exec.dataframe()
 
     def trata_csv():
-        trata = trata()
-        trata.formata
+        tr = trata()
+        tr.ler_df()
 
     # chamada da dag da extração
     baixa_csv = PythonOperator(
@@ -34,5 +34,4 @@ with DAG('tratamento_fii_rank', start_date = datetime(2022,11,20),
         sql='fundos_fii_csv.sql'
     )
 
-    baixa_csv >> trata_csv
-    criar_tabela_fii
+    baixa_csv >> trata_csv >> criar_tabela_fii

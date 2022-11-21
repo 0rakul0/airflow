@@ -33,4 +33,4 @@ COPY fundos_invetimentos(codigo_fundo, setor, preco_atual, liquidez_diaria, divi
                         dy_12_acumulado,dy_3_media,dy_6_media,dy_12_media,dy_ano,variacao_preco,rentabilidade_periodo,
                         rentabilidade_acumulada,patrimonio_liquido,vpa,p_vpa,dy_patrimonial,variacao_patrimonial,
                         rentabilidade_patrimonial_periodo,rentabilidade_patrimonial_acumulada,vacancia_fisica,
-                        vacancia_financeira,quantidade_ativos) FROM '../csv/fundos_investimentos.csv' DELIMITER ';' CSV HEADER
+                        vacancia_financeira,quantidade_ativos) FROM '/csv/fundos_investimentos_tratado' DELIMITER ';' CSV HEADER
