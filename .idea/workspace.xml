@@ -51,7 +51,7 @@
       <recent name="E:\airflow" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.acidentes">
+  <component name="RunManager" selected="Python.up_postgres">
     <configuration name="fundos_fii_csv.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/sql/fundos_fii_csv.sql" />
       <script-mode>FILE</script-mode>
@@ -126,9 +126,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.up_postgres" />
         <item itemvalue="Python.acidentes" />
         <item itemvalue="Database Script.fundos_fii_csv.sql" />
-        <item itemvalue="Python.up_postgres" />
         <item itemvalue="Python.trata_csv" />
       </list>
     </recent_temporary>
@@ -142,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668871478867</updated>
       <workItem from="1668871484465" duration="11953000" />
-      <workItem from="1668983574453" duration="22634000" />
+      <workItem from="1668983574453" duration="26536000" />
     </task>
     <servers />
   </component>
@@ -165,7 +165,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dags/up_postgres.py</url>
-          <line>70</line>
+          <line>81</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -175,15 +175,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dags/up_postgres.py</url>
-          <line>57</line>
+          <line>67</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dags/up_postgres.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/airflow$acidentes.coverage" NAME="acidentes Coverage Results" MODIFIED="1669044397313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
-    <SUITE FILE_PATH="coverage/airflow$up_postgres.coverage" NAME="up_postgres Coverage Results" MODIFIED="1669038669767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
+    <SUITE FILE_PATH="coverage/airflow$up_postgres.coverage" NAME="up_postgres Coverage Results" MODIFIED="1669058900740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
     <SUITE FILE_PATH="coverage/airflow$trata_csv.coverage" NAME="trata_csv Coverage Results" MODIFIED="1669037769851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
   </component>
 </project>
