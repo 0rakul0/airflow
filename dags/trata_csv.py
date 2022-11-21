@@ -2,9 +2,20 @@ import pandas as pd
 import datetime
 
 class trata():
+    def apagar(self):
+        dados = pd.DataFrame({'data_extracao':[], 'codigo_fundo':[],'setor':[], 'preco_atual':[], 'liquidez_diaria':[],
+                        'dividendo':[], 'dy':[], 'dy_3_acumulado':[], 'dy_6_acumulado':[], 'dy_12_acumulado':[],
+                        'dy_3_media':[], 'dy_6_media': [],'dy_12_media':[], 'dy_ano':[], 'variacao_preco':[],
+                        'rentabilidade_periodo':[],'rentabilidade_acumulada':[],'patrimonio_liquido':[], 'vpa':[], 'p_vpa':[],
+                        'dy_patrimonial':[],'variacao_patrimonial':[],'rentabilidade_patrimonial_periodo':[],
+                        'rentabilidade_patrimonial_acumulada':[], 'vacancia_fisica':[], 'vacancia_financeira':[],
+                        'quantidade_ativos':[]})
+
+        dados.to_csv('./csv/fundos_investimentos_tratado.csv', sep=';', header=True)
+        self.ler_df()
+
     def ler_df(self):
         df = pd.read_csv('./csv/fundos_investimentos.csv', sep=';')
-
         """
          1   codigo_fundo                         383 non-null    object 
          2   setor                                366 non-null    object 
@@ -41,6 +52,7 @@ class trata():
 
             try:
                 codigo_fundo = dados['codigo_fundo']
+                setor = dados['setor']
                 preco_atual = dados['preco_atual']
                 preco_atual = float(real_monetario(preco_atual))
                 liquidez_diaria = dados['liquidez_diaria']
@@ -69,6 +81,8 @@ class trata():
                 rentabilidade_periodo = float(porcent(rentabilidade_periodo))
                 rentabilidade_acumulada = dados['rentabilidade_acumulada']
                 rentabilidade_acumulada = float(porcent(rentabilidade_acumulada))
+                patrimonio_liquido = dados['patrimonio_liquido']
+                patrimonio_liquido = float(real_monetario(patrimonio_liquido))
                 vpa = dados['vpa']
                 vpa = float(real_monetario(vpa))
                 p_vpa = dados['p_vpa']
@@ -88,19 +102,25 @@ class trata():
                 quantidade_ativos = dados['quantidade_ativos']
                 quantidade_ativos = int(vf(quantidade_ativos))
 
-                novo_tratamento = pd.DataFrame({'data_extracao':dia, 'codigo_fundo':codigo_fundo, 'preco_atual':preco_atual, 'liquidez_diaria':liquidez_diaria,
-                        'dividendo':dividendo, 'dy':dy, 'dy_3_acumulado':dy_3_acumulado, 'dy_6_acumulado':dy_6_acumulado, 'dy_12_acumulado':dy_12_acumulado,
-                        'dy_3_media':dy_3_media, 'dy_6_media': dy_6_media,'dy_12_media':dy_12_media, 'dy_ano':dy_ano, 'variacao_preco':variacao_preco,
-                        'rentabilidade_periodo':rentabilidade_periodo,'rentabilidade_acumulada':rentabilidade_acumulada, 'vpa':vpa, 'p_vpa':p_vpa,
-                        'dy_patrimonial':dy_patrimonial,'variacao_patrimonial':variacao_patrimonial,'rentabilidade_patrimonial_periodo':rentabilidade_patrimonial_periodo,
-                        'rentabilidade_patrimonial_acumulada':rentabilidade_patrimonial_acumulada, 'vacancia_fisica':vacancia_fisica, 'vacancia_financeira':vacancia_financeira,
-                        'quantidade_ativos':quantidade_ativos}, index=[id])
+                novo_tratamento = pd.DataFrame(
+                    {'data_extracao': dia, 'codigo_fundo': codigo_fundo, 'setor': setor, 'preco_atual': preco_atual,
+                     'liquidez_diaria': liquidez_diaria, 'dividendo': dividendo, 'dy': dy,
+                     'dy_3_acumulado': dy_3_acumulado, 'dy_6_acumulado': dy_6_acumulado,
+                     'dy_12_acumulado': dy_12_acumulado, 'dy_3_media': dy_3_media, 'dy_6_media': dy_6_media,
+                     'dy_12_media': dy_12_media, 'dy_ano': dy_ano, 'variacao_preco': variacao_preco,
+                     'rentabilidade_periodo': rentabilidade_periodo, 'rentabilidade_acumulada': rentabilidade_acumulada,
+                     'patrimonio_liquido': patrimonio_liquido, 'vpa': vpa, 'p_vpa': p_vpa,
+                     'dy_patrimonial': dy_patrimonial, 'variacao_patrimonial': variacao_patrimonial,
+                     'rentabilidade_patrimonial_periodo': rentabilidade_patrimonial_periodo,
+                     'rentabilidade_patrimonial_acumulada': rentabilidade_patrimonial_acumulada,
+                     'vacancia_fisica': vacancia_fisica, 'vacancia_financeira': vacancia_financeira,
+                     'quantidade_ativos': quantidade_ativos}, index=[id])
 
-                novo_tratamento.to_csv('../csv/fundos_investimentos_tratado.csv', sep=';', mode='a', header=False, index=True)
+                novo_tratamento.to_csv('./csv/fundos_investimentos_tratado.csv', sep=';', mode='a', header=False, index=True)
 
             except Exception as e:
                 print(e)
 
 if __name__ == "__main__":
     tr = trata()
-    tr.ler_df()
+    tr.apagar()
