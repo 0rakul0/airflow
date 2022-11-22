@@ -65,6 +65,7 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
     - ./sql:/opt/airflow/sql
     - ./csv://opt/airflow/csv
+    - ./bi://opt/airflow/bi
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on

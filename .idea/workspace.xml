@@ -142,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668871478867</updated>
       <workItem from="1668871484465" duration="11953000" />
-      <workItem from="1668983574453" duration="26536000" />
+      <workItem from="1668983574453" duration="29645000" />
     </task>
     <servers />
   </component>
@@ -188,7 +188,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/airflow$acidentes.coverage" NAME="acidentes Coverage Results" MODIFIED="1669044397313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
-    <SUITE FILE_PATH="coverage/airflow$up_postgres.coverage" NAME="up_postgres Coverage Results" MODIFIED="1669058900740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
+    <SUITE FILE_PATH="coverage/airflow$up_postgres.coverage" NAME="up_postgres Coverage Results" MODIFIED="1669059003789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
     <SUITE FILE_PATH="coverage/airflow$trata_csv.coverage" NAME="trata_csv Coverage Results" MODIFIED="1669037769851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dags" />
   </component>
 </project>

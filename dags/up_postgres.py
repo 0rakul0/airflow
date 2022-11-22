@@ -27,7 +27,7 @@ class up_postgres():
         return cursor.fetchone()
 
     def insere_banco(self):
-        dados = pd.read_csv('../csv/fundos_investimentos_tratado.csv', sep=';', header=0, error_bad_lines=False)
+        dados = pd.read_csv('./csv/fundos_investimentos_tratado.csv', sep=';', header=0, error_bad_lines=False)
         cursor, conexao = self.conecta()
         data_verifica = datetime.date.today()
         data_if = str(data_verifica)
